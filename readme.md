@@ -9,19 +9,23 @@ For your first group project, you'll be creating a simple web app that will allo
 Make sure each member of your group understands the underlying concepts before moving from one phase to the next. Each bullet point is a perfect place to add/commit so build that habit here by doing so after each bullet point is completed.
 
 Base Mode requirements:
+===
 
 Phase 1: server GET setup:
+---
 
 - create a global array variable in server.js to hold the passengers
 - create a GET route on the server named "/passenger"that sends a response of this array (can test in browser, may also want to put some test data in there as such: ``` let passengers = [ { firstName: 'Commander', lastName: 'Wisdom' } ]``` so you don't only have an empty array)
 
 Phase 2: client GET:
+---
 
 - create a function in client.js names "getPassengers" that makes a GET call via AJAX to this get route
 - display the response from the GET call in the console
 - displays the response on the DOM (there is already a "passengersOut" ul element)
 
 Phase 3: Client POST
+---
 
 - add text inputs and button to the html for the user to add a passenger (eg: firstNameIn, lastNameIn, addPassengerButton)
 - add a click hander for the addPassengerButton in client.js
@@ -29,6 +33,7 @@ Phase 3: Client POST
 - once you have an object with the user input, add an AJAX POST call to this function that will send it to the server
 
 Phase 4: Server Post 
+---
 
 - create a POST route on the server at "/passenger"
 - log out the ```req.body``` received in the route
@@ -39,6 +44,7 @@ Phase 4: Server Post
 Review the app's code here and check with one another that the techniques make sense before moving on to the Stretch Goals if you have time.
 
 Stretch Goals:
+---
 
 - add a "arrived" button for each passenger with a class of "removePassenger"
 - add a data-id field for each "arrived" button that holds the passenger's array index (i in the loop)
